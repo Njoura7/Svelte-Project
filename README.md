@@ -1,26 +1,57 @@
-# 🚀 Handle data in SvelteKit with Prisma
+# 🚀 Svelte Project
 
-This application is built using these technologies:
+## Overview
 
-- [Sveltekit](https://kit.svelte.dev/) as the framework
-- [Prisma](https://www.prisma.io/) as the ORM for migrations and database connection
-- [TypeScript](https://www.typescriptlang.org/) as the programming language
-- [SQLite](https://www.sqlite.org/index.html) as the database
+This repository contains a web application built with Svelte. Svelte is a modern JavaScript framework that enables developers to write easy-to-understand JavaScript code, which is then compiled to highly efficient code that runs in the browser. The project also utilizes Prisma, an open-source database toolkit, for database management.
 
-## 🛠️ Getting started
-To get started, navigate to the directory of your choice and run the following command to clone the repository:
+## Setup Instructions
 
-```
-git clone https://github.com/sonylomo/demo-sveltekit.git
-cd demo-sveltekit
-```
+### Prerequisites
 
-Install dependencies and fire up the application:
+Node.js installed
+npm (usually comes with Node.js)
 
-```bash
-npm install
-npm run dev
-```
+### Installation
 
-Awesome! Your application should be running on: [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
-<img width="1904" alt="starter blog" src="https://user-images.githubusercontent.com/49971500/218681388-5dd761a6-b51e-4614-8eac-b0919397e5ec.png">
+Clone the Repository
+
+Copy code
+
+`git clone https://github.com/Njoura7/Svelte-Project.git
+cd Svelte-Project`
+
+Install Dependencies
+
+Copy code
+
+`npm install`
+
+Prisma Setup
+
+Create a .env file in the root of your project with the following content:
+
+env
+Copy code
+
+`DATABASE_URL="file:./dev.db"`
+
+Run the Prisma migration:
+
+Copy code
+`npx prisma migrate dev`
+
+Generate the Prisma client:
+
+Copy code
+
+`npx prisma generate`
+
+Running the Application
+
+Copy code
+
+`npm run dev`
+
+## Contributing
+
+Contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
